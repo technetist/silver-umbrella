@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans');
-
+/*-------Global------*/
 body{
 	background-color: #EBF3DB;
 }
@@ -11,62 +11,16 @@ h1, h2, h3, h4 {
 p {
 	font-family: 'Open Sans', sans-serif;
 }
-article {
+article, .container {
 	width: 80%;
 	max-width: 822px;
 	margin: 0 auto;
 }
 
-@media (max-width:959px){
-	.logo {
-		width: 100%;
-		
-	}
-	.logo img {
-		width: 100%;
-	}
-	.title {
-		width: 100%;
-	}
-	.heading {
-		background-color: #A1C23A;
-	}
+/*-------Nav------*/
+.navbar {
+	z-index: 99;
 }
-@media (min-width: 960px){
-	.logo {
-		width: 35%;
-		display: inline-block;
-		background-color: #EBF3DB;
-		float: left;
-	}
-	.logo img {
-		width: 100%;
-	}
-	.title {
-		width: 65%;
-		display: inline-block;
-	}
-	.heading {
-		background-color: #A1C23A;
-		clear: both;
-		max-width: 1027px;
-		margin: 0 auto;
-	}
-	.site-header {
-		background: linear-gradient(90deg, #EBF3DB 50%, #A1C23A 50%);
-	}
-}
-
-
-
-.title {
-	
-}
-.title h1 {
-	margin-left: 50px;
-	margin-top: 20px;
-}
-
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
@@ -81,3 +35,123 @@ article {
   top: 0;
   width: 100%;
 }
+
+/*-------Head------*/
+.heading {
+	background-color: #A1C23A;
+}
+.logo {
+	width: 100%;
+	
+}
+.logo img {
+	width: 100%;
+}
+.title {
+	width: 100%;
+}
+.title h1 {
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+/*-------Banner------*/
+.banner {
+	background: url(../img/banner.jpg) no-repeat center;
+	height: 200px;
+}
+
+/*-------Vido and Callout Box------*/
+.main-content {
+	margin-top: 20px;
+	
+}
+.callout {
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+img.dw-logo {
+	height: 50px;
+	width: 50px;
+}
+h3.dw {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.company-info span {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+.company-info p {
+	font-size: .9em;
+}
+
+/*-------About Clayton------*/
+.clayton-about {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.about-content {
+	background-color: white;
+	padding: 0 15px;
+}
+.about-content img {
+	margin: 15px 15px 15px 0;
+	height: 150px;
+	width: 150px;
+}
+
+/*-------Transcript------*/
+#highlights {
+	background-color: white;
+	padding-bottom: 20px;
+}
+.section-break{
+	margin-top: 40px;
+}
+.container {
+	margin-top: 30px;
+}
+
+/*-------Footer------*/
+#footer {
+	background-color: #A1C23A;
+}
+
+/*-------Desktop------*/
+@media (min-width: 960px){
+	/*-------Head------*/
+	.heading {
+		clear: both;
+		max-width: 1027px;
+		margin: 0 auto;
+	}
+	.site-header {
+		background: linear-gradient(90deg, #EBF3DB 50%, #A1C23A 50%);
+	}
+	.logo {
+		width: 35%;
+		display: inline-block;
+		background-color: #EBF3DB;
+		float: left;
+	}
+	.title {
+		width: 65%;
+		display: inline-block;
+	}
+
+	/*-------Desktop------*/
+	div.videocontent{
+		width: 100%;
+	}
+	p.dw {
+		margin-top: 15px;
+	}
+	.company-info {
+		display: block;
+		margin-top: 20px;
+	}
+
+}
+
